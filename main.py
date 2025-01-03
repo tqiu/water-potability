@@ -9,7 +9,7 @@ app = FastAPI(
     version="0.1",
 )
 
-with open(r"C:\Users\qiutu\Documents\courses\Data_Thinkers\water_potability_dvc\model.pkl", "rb") as f:
+with open("model.pkl", "rb") as f:
     model = pickle.load(f)
 
 @app.get("/")
